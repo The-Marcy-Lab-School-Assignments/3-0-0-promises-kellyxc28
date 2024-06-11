@@ -25,7 +25,9 @@ const handleResolvedOrRejectedPromise = (value) => {
     });
 };
 
-const pauseForMs = () => {};
+const pauseForMs = (milliseconds) => {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+};
 
 module.exports = {
   resolvedWrapper,
