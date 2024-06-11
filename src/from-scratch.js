@@ -13,7 +13,17 @@ const handleResolvedPromise = (value) => {
   return value;
 };
 
-const handleResolvedOrRejectedPromise = () => {};
+const handleResolvedOrRejectedPromise = (value) => {
+  return Promise.resolve(value)
+    .then((value) => {
+      console.log(value);
+      return value;
+    })
+    .catch((error) => {
+      console.error(`Your error message was: ${error.message}`);
+      return null;
+    });
+};
 
 const pauseForMs = () => {};
 
