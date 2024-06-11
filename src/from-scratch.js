@@ -1,17 +1,14 @@
-const resolvedWrapper = () => {
+const resolvedWrapper = (value) => {
+  return new Promise((resolve) => resolve(value));
 };
 
-const rejectedWrapper = () => {
-};
+const rejectedWrapper = () => {};
 
-const handleResolvedPromise = () => {
-};
+const handleResolvedPromise = () => {};
 
-const handleResolvedOrRejectedPromise = () => {
-};
+const handleResolvedOrRejectedPromise = () => {};
 
-const pauseForMs = () => {
-};
+const pauseForMs = () => {};
 
 module.exports = {
   resolvedWrapper,
