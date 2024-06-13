@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-
+/** FEEDBACK: Great job with this problem! It was a hard one! */
 const numsToRGBColor = ([color1, color2, color3]) => {
   return `rgb(${color1}, ${color2}, ${color3})`;
 };
